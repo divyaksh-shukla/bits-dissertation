@@ -1,0 +1,80 @@
+curl 'https://services.itrontotalstage.com/api/v1/fcgateway/tenants/35035eed-9b39-4d1a-8f2e-3575b27d009e/historical-view/chart' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-AU,en;q=0.9' \
+  -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkdUQjROMUo3QXlmLzVxS2VBaDVaaHZjK3dNNVBpWWcxOE45czFiZ21sRWM9IiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.eyJpc3MiOiJodHRwczovL2lkZW5zZXJ2ZXIuaXRyb250b3RhbHN0YWdlLmNvbSIsIm5iZiI6MTY1OTAyMTc5OCwiaWF0IjoxNjU5MDIxNzk4LCJleHAiOjE2NTkwNTA1OTgsImF1ZCI6WyJmb3JlY2FzdGluZ3Njb3BlIiwiaHR0cHM6Ly9pZGVuc2VydmVyLml0cm9udG90YWxzdGFnZS5jb20vcmVzb3VyY2VzIl0sInNjb3BlIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsInJvbGVzIiwiZm9yZWNhc3RpbmdzY29wZSJdLCJhbXIiOlsiZXh0ZXJuYWwiXSwiY2xpZW50X2lkIjoiYjcxMWMxMTktMGJjZi00OWMxLTk4ZDAtYmYyMGFiNDZjOGJkIiwic3ViIjoiOTlhZTk4NGJiMDNiNDM1ZTk1MDBjMmU2NTE4YzRmNzYiLCJhdXRoX3RpbWUiOjE2NTkwMjE3OTgsImlkcCI6ImljYWQiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJkc2h1a2xhQGl0cm9uLmNvbSIsImFpZCI6IjZhZDZhNDIyNzZkNTk0MTUwMDg5Y2RjMDE5OTY1MjI4IiwidGlkIjoiMzUwMzVlZWQ5YjM5NGQxYThmMmUzNTc1YjI3ZDAwOWUiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOlsiRm9yZWNhc3RMb25nVGVybVVzZXIiLCJGb3JlY2FzdFVzZXIiXSwic2lkIjoiNTRCMURDNzdCNUVFQzREQzQ0RkQ3NThFQjJDMERCQTgifQ.Fdc_6NsHVKIbEM5M0O2Bv_Yq-7f3thd80m_oWM93eOV0JqySiAHxHHHkLOViIS5z1L8QixBjDCvYqDEvBssKwi076rvGxFn7WYayP1FdT29R6ZBwVCVuzbCSaGGRXsOUNrVm-i-2vlWOSDUrdXb0vnSJpHT1ReJzWoEDNtUQbPR_tZQvIA5pivvMOJMYoRPWLpjj6j7mbcbjS0eeabHPL6eokH72HjeUnark3PbjxtkwoF1qTVn-MtEWq-VGdQrQNurWOdNh6nNUUz9OcDIIv2_NSlBMWYD4iisa8nwOVGy48FaWofDbJwkslWNLwwcNn1HAph7edHmovnXW_b51UQ' \
+  -H 'Connection: keep-alive' \
+  -H 'DNT: 1' \
+  -H 'Duration: 1' \
+  -H 'EndDate: 2022-07-27T23:59:59.000' \
+  -H 'Id: 1186' \
+  -H 'Instance: Itron Demo' \
+  -H 'Origin: https://forecasting.itrontotalstage.com' \
+  -H 'Referer: https://forecasting.itrontotalstage.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'StartDate: 2021-07-28T00:00:00.00' \
+  -H 'Type: Actual Load' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36' \
+  -H 'WeatherConceptKey: 0' \
+  -H 'WeatherKey: 1143' \
+  -H 'correlationId: e0458584-497f-d04e-f5de-415baf1fa7a6' \
+  -H 'languageCode: en-US' \
+  -H 'sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'tenantId: 35035eed-9b39-4d1a-8f2e-3575b27d009e' \
+  --compressed
+
+
+
+
+
+
+
+
+ADMIN PORTAL
+curl 'https://k8s.itrontotalstage.com/forecastadmingateway/api/v1/forecast/tenants/62434e0a-bf41-42c5-8a09-f7f7a15f0a6c/historical-view/chart' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-AU,en;q=0.9' \
+  -H 'Authorization: Bearer 8E5D388C385CE85C4F24D857133EDBC1DED881D6237FA258E27F3DD729B82D9E' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'DNT: 1' \
+  -H 'Itron-ClientId: 6c4b2dea2fff477ab641222a7860fb25' \
+  -H 'Itron-CorrelationId: 148ac3f5-f830-4e08-b25d-46e9260f69ba' \
+  -H 'Itron-TenantId: 35035eed9b394d1a8f2e3575b27d009e' \
+  -H 'Itron-UserId: 99ae984bb03b435e9500c2e6518c4f76' \
+  -H 'Origin: https://portal-temp.itrontotalstage.com' \
+  -H 'Referer: https://portal-temp.itrontotalstage.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36' \
+  -H 'correlationId: 37080c19-0df3-f442-9d53-74da61c5ccc9' \
+  -H 'duration: 1' \
+  -H 'endDate: 2022-07-28T23:59:59Z' \
+  -H 'id: 23' \
+  -H 'instanceName: Itron Demo' \
+  -H 'languageCode: en-US' \
+  -H 'sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'startDate: 2022-06-28T00:00:00Z' \
+  -H 'tenantId: 62434e0a-bf41-42c5-8a09-f7f7a15f0a6c' \
+  -H 'type: Actual Load' \
+  -H 'userId: 99ae984bb03b435e9500c2e6518c4f76' \
+  -H 'weatherConceptKey: 0' \
+  -H 'weatherKey: 1143' \
+  --compressed
+
+
+
+
+
+
+
+
+
+
+

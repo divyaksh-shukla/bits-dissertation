@@ -1,0 +1,6 @@
+https://api.openweathermap.org/data/2.5/onecall?lat=29.9902&lon=95.3368&appid=34120c061da5c3d6ed3be40169616d5f&exclude=minutely&units=imperial
+
+
+http://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&appid={API key} 
+
+dt,dt_iso,timezone,city_name,lat,lon,temp,visibility,dew_point,feels_like,temp_min,temp_max,pressure,sea_level,grnd_level,humidity,wind_speed,wind_deg,wind_gust,rain_1h,rain_3h,snow_1h,snow_3h,clouds_all,weather_id,weather_main,weather_description,weather_icon

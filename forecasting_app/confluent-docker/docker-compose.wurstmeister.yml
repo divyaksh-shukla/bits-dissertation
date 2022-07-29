@@ -1,0 +1,23 @@
+version: '2'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "22181:2181"
+    restart: unless-stopped
+
+  kafka:
+    build: .
+    ports:
+      - "29092:9092"
+    environment:
+      DOCKER_API_VERSION: 1.22
+      KAFKA_BROKER_ID: 1
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://:9092,PLAINTEXT://:29092,PLAINTEXT://localhost:9092,PLAINTEXT://localhost:29092,PLAINTEXT://192.168.29.176:9092,PLAINTEXT://192.168.29.176:29092
+      # KAFKA_ADVERTISED_HOST_NAME: 192.168.99.100
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped

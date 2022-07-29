@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Custom folders
+forecasting_app/confluent-5.4.0/
+
+# Zip files
+*.zip
+
+# CSV files
+*.csv

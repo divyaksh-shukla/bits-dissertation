@@ -1,0 +1,24 @@
+version: '3.3'
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:4.1.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+
+  kafka:
+    image: confluentinc/cp-kafka:4.1.0
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 0
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: DATA_LISTENER://localhost:9092,INTERNAL_LISTENER://kafka:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: DATA_LISTENER:PLAINTEXT,INTERNAL_LISTENER:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL_LISTENER
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - ./kafka-apps:/opt/kafka-apps
+      - ./kafka-data:/opt/kafka-data
